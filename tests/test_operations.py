@@ -1,18 +1,18 @@
 import pytest
-from app.operations import add, subtract, multiply, division
+from app.operations import addition, subtraction, multiplication, division
 
 # Positive Tests
 def test_addition_positive():
 	"""Test addition with positive numbers."""
-	assert add(2, 3) == 5
+	assert addition(2, 3) == 5
 
 def test_subtraction_positive():
 	"""Test subtraction with positive numbers."""
-	assert subtract(5, 2) == 3
+	assert subtraction(5, 2) == 3
 
 def test_multiplication_positive():
 	"""Test multiplication with positive numbers."""
-	assert multiply(4, 5) == 20
+	assert multiplication(4, 5) == 20
 
 def test_division_positive():
 	"""Test division with positive numbers."""
@@ -21,15 +21,15 @@ def test_division_positive():
 # Negative Tests
 def test_addition_negative():
 	"""Test addition with negative numbers."""
-	assert add(-2, -3) == -5
+	assert addition(-2, -3) == -5
 
 def test_subtraction_negative():
 	"""Test subtraction with negative numbers."""
-	assert subtract(-5, -2) == -3
+	assert subtraction(-5, -2) == -3
 
 def test_multiplication_negative():
 	"""Test multiplication with negative numbers."""
-	assert multiply(-4, -5) == 20
+	assert multiplication(-4, -5) == 20
 
 def test_division_negative():
 	"""Test division with negative numbers."""
