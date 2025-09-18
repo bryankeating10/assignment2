@@ -1,4 +1,3 @@
-""" tests/test_calculator.py """
 import sys
 from io import StringIO
 from app.calculator import calculator
