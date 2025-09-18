@@ -18,3 +18,19 @@ def test_division_positive():
 	"""Test division with positive numbers."""
 	assert division(10, 2) == 5
 
+# Negative Tests
+def test_addition_negative():
+	"""Test addition with negative numbers."""
+	assert add(-2, -3) == -5
+
+def test_subtraction_negative():
+	"""Test subtraction with negative numbers."""
+	assert subtract(-5, -2) == -3
+
+def test_multiplication_negative():
+	"""Test multiplication with negative numbers."""
+	assert multiply(-4, -5) == 20
+
+def test_division_negative():
+	"""Test division with negative numbers."""
+	assert division(-10, -2) == 5
