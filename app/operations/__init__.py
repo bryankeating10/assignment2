@@ -7,8 +7,7 @@ def subtraction(a:float, b:float) -> float:
 def multiplication(a:float, b:float) -> float:
 	return a * b
 
-def division(a:float, b:float) -> float | str:
-	if b != 0:
-		return a / b
-	else:
-		return "Division by zero error"
+def division(a:float, b:float) -> float:
+	if b == 0:
+		raise ValueError("Division by zero is not allowed")
+	return a / b
