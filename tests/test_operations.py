@@ -34,3 +34,9 @@ def test_multiplication_negative():
 def test_division_negative():
 	"""Test division with negative numbers."""
 	assert division(-10, -2) == 5
+
+# Division by Zero Test
+def test_division_by_zero():
+	"""Test division by zero."""
+	with pytest.raises(ValueError, match="Division by zero is not allowed"):
+		division(5, 0)
